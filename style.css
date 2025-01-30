@@ -1,0 +1,129 @@
+:root {
+  --white-color: #0077b6;
+  --bg-color: #0077b6;
+  --gray-color:#0077b6;
+}
+
+body {
+  background: var(--bg-color) !important;
+  
+}
+
+.nav-item .nav-link {
+  color: var(--white-color);
+}
+
+.row1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.download-btn{
+  text-align: center;
+  height: 20px;
+  width: auto;
+}
+
+.download-cv {
+  text-decoration: none;
+  background-color:rgb(66, 64, 64);
+  color:white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.download-cv:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.mainphoto{
+  height:30vh;
+  width:30vh;
+  border-radius: 50%;
+  background-image: url("../images/home-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.hero {
+  height: 100vh;
+  
+}
+
+#skills i {
+  height: 100px;
+  width: 100px;
+}
+
+#portfolio img {
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+#about .img,
+#about img,
+.hire-text h2 {
+  position: relative;
+}
+
+#about .img::before {
+  content: "";
+  left: 50%;
+  width: 4px;
+  position: absolute;
+  height: calc(100% + 140px);
+  background: var(--gray-color);
+}
+
+#about img,
+#about .hire-text h2 {
+  width: 140px;
+}
+
+#about .hire-text h2 {
+  height: 140px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+
+#cv img {
+  width: 230px;
+}
+
+/* #contact {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("../images/contact-bg.jpg");
+} */
+
+@media screen and (max-width: 990px) {
+  #skills .card {
+    width: calc(100% / 2 - 10px) !important;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  #skills .card,
+  #portfolio .card-wrapper {
+    width: 100% !important;
+  }
+}
